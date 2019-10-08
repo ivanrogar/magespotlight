@@ -1,3 +1,5 @@
+Magento 2 administration spotlight search
+
 Use ALT+S anywhere in Magento administration to activate search, ESC to close
 
 Features:
