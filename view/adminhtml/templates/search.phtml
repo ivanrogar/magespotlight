@@ -1,0 +1,22 @@
+<?php /** @var \JohnRogar\MageSpotlight\Block\Adminhtml\Search $block */ ?>
+
+<div class="col-l-12 col-m-12 spotlightsearch" style="display: none;">
+    <input type="text" class="spotlightsearch--input"
+           data-url="<?php echo $block->getControllerUrl() ?>"/>
+
+    <br/>
+
+    <div class="col-l-12 col-m-12 spotlightsearch--results">
+        <div class="spotlightsearch--results-data">
+            No results
+        </div>
+    </div>
+</div>
+
+<script>
+    require(['jquery', 'spotlightSearch'],
+        function ($, search) {
+            //
+        }
+    );
+</script>

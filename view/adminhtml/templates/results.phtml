@@ -1,0 +1,17 @@
+<?php $collection = $block->getSearchCollection();?>
+<?php if ($collection && iterator_count($collection)):?>
+    <?php /** @var \JohnRogar\MageSpotlight\Model\DataItemInterface[] $collection */?>
+    <?php foreach ($collection as $result):?>
+        <div class="col-l-12 col-m-12 spotlightsearch--results-item">
+            <a href="<?php echo $result->getUrl()?>">
+            <div class="col-l-2 col-m-2 spotlightsearch--results-item-icon">
+            </div>
+            <div class="col-l-10 col-m-10 spotlightsearch--results-item-link">
+                <?php echo $result->getLabel()?>
+            </div>
+            </a>
+        </div>
+    <?php endforeach;?>
+<?php else:?>
+    No results
+<?php endif;?>

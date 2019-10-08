@@ -1,0 +1,65 @@
+.spotlightsearch--input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.spotlightsearch--results {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+.spotlightsearch--results-data {
+    border: 1px solid #41362f;
+    background: #000;
+    opacity: 0.8;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.3em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.spotlightsearch--results-item {
+    border: 1px solid #41362f;
+    padding: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.spotlightsearch--results-item:hover {
+    background: #41362f;
+    transform: scale(1.01);
+    border: 1px solid #fff;
+}
+
+.spotlightsearch--results-item-icon {
+    font-family: 'Admin Icons';
+    content: '\e63a';
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.spotlightsearch--results-item-icon:before {
+    content: '\e608';
+}
+
+.spotlightsearch--results-item-link {
+    padding-top: 5px;
+}
+
+.spotlightsearch--results-item a, .spotlightsearch--results-item a:visited, .spotlightsearch--results-item a:hover {
+    color: #fff
+}
+
+.spotlightsearch-modal .modal-inner-wrap {
+    height: 100%;
+    background: #41362f !important;
+}
+
+.spotlightsearch-modal .modal-header h1 {
+    color: #fff;
+}
